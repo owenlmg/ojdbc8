@@ -2,11 +2,11 @@
 
 *ojdbc8，是oracle针对jdk8的驱动*
 
-0. 注册oracle账号
+1. 注册oracle账号
 
 ​    `  http://maven.oracle.com`
 
-1. 项目pom.xml中增加repositories
+2. 项目pom.xml中增加repositories
 
 ```xml
 <repositories>
@@ -30,7 +30,7 @@
 </pluginRepositories>
 ```
 
-1. 配置wagon-http
+3. 配置wagon-http
 
 - 下载wagon-http jar包
 
@@ -38,7 +38,7 @@
 
 - 把下载的jar包放入maven安装目录 ` MAVEN_HOME/lib/ext/ `
 
-1. 在maven配置文件中增加HTTP Wagon
+4. 在maven配置文件中增加HTTP Wagon
 
    ` MAVEN_HOME/conf/settings.xml ` server节点中增加
 
@@ -73,7 +73,7 @@
      </server>
    ```
 
-1. pom.xml中增加profiles
+5. pom.xml中增加profiles
 
    ```xml
    <profiles>
@@ -96,7 +96,7 @@
      </profiles>
    ```
 
-   1. pom.xml中增加dependency，version是oracle 的版本
+   6. pom.xml中增加dependency，version是oracle 的版本
 
       ```xml
       <dependency>
@@ -106,7 +106,7 @@
       </dependency>
       ```
 
-   1. 在有些网站的说明中，还需要在.m2目录下增加settings-security.xml文件，但官方并没有说需要这个，所以可能是以前需要，但是现在不需要了，内容如下：
+   7. 在有些网站的说明中，还需要在.m2目录下增加settings-security.xml文件，但官方并没有说需要这个，所以可能是以前需要，但是现在不需要了，内容如下：
 
       其中的密码也是oracle注册的密码，生成方式：`mvn -emp password`
 
