@@ -2,7 +2,7 @@
 
 *ojdbc8，是oracle针对jdk8的驱动*
 
-1. 注册oracle账号
+0. 注册oracle账号
 
 ​    `  http://maven.oracle.com`
 
