@@ -96,7 +96,7 @@
      </profiles>
    ```
 
-   6. pom.xml中增加dependency，version是oracle 的版本
+6. pom.xml中增加dependency，version是oracle 的版本
 
       ```xml
       <dependency>
@@ -106,7 +106,7 @@
       </dependency>
       ```
 
-   7. 在有些网站的说明中，还需要在.m2目录下增加settings-security.xml文件，但官方并没有说需要这个，所以可能是以前需要，但是现在不需要了，内容如下：
+7. 在有些网站的说明中，还需要在.m2目录下增加settings-security.xml文件，但官方并没有说需要这个，所以可能是以前需要，但是现在不需要了，内容如下：
 
       其中的密码也是oracle注册的密码，生成方式：`mvn -emp password`
 
